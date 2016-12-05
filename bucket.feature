@@ -52,7 +52,7 @@ Feature: the bucket feature
     Then get bucket statistics status code is 200
     And get bucket statistics status is "active"
 
-    # DELETE Bucket
+  # DELETE Bucket
   Scenario: delete the bucket
     When delete bucket
     Then delete bucket status code is 204
