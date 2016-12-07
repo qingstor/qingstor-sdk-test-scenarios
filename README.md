@@ -24,7 +24,7 @@ Scenario: create the bucket
   Then put bucket status code is 201
 ```
 
-Given these test scenarios, each SDK could implement a same test flow. Finally, running the test flow against the given features to check whether the SDK is right.
+Given these test scenarios, each SDK could implement the same test flow. Finally, running the test flow against the given features to check whether the SDK is right.
 
 __Running Test in Ruby SDK:__
 
