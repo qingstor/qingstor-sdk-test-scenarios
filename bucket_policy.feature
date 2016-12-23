@@ -24,6 +24,12 @@ Feature: the bucket policy feature
                 "*.example1.com",
                 "*.example2.com"
               ]
+            },
+            "ip_address": {
+              "source_ip": [
+                "172.16.0.0/24",
+                "172.16.1.1/32"
+              ]
             }
           }
         }
