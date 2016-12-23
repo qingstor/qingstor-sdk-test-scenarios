@@ -22,6 +22,12 @@ Feature: the object feature
     Then get object status code is 200
     And get object content length is 1048576
 
+  # GET Object with Content-Type
+  Scenario: get the object with content type "video/mp4; charset=utf8"
+    When get object with content type
+    Then get object status code is 200
+    And get object content type is "video/mp4; charset=utf8"
+
   # GET Object with Query Signature
   Scenario: get the object with query signature
     When get object with query signature
