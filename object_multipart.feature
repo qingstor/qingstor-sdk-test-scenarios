@@ -3,7 +3,20 @@ Feature: the object multipart sub service
 
   # Initiate Multipart Upload
   Scenario: initiate the object multipart upload
-    When initiate multipart upload with key "test_object_multipart"
+    When initiate multipart upload with key
+      | key |
+      # ASCII
+      | test_object |
+      # Non-ASCII
+      | 中文测试 |
+      | 田中さんにあげて下さい |
+      | パーティーへ行かないか |
+      | 和製漢語 |
+      | 사회과학원 어학연구소 |
+      | 찦차를 타고 온 펲시맨과 쑛다리 똠방각하 |
+      | 社會科學院語學研究所 |
+      | 울란바토르 |
+      | 𠜎𠜱𠝹𠱓𠱸𠲖𠳏 |
     Then initiate multipart upload status code is 200
 
   # Upload Multipart
