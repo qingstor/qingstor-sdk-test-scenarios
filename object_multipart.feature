@@ -1,8 +1,7 @@
 @object_multipart
 Feature: the object multipart sub service
 
-  # Initiate Multipart Upload
-  Scenario: initiate the object multipart upload
+  Scenario Outline:
     # Initiate Multipart Upload
     When initiate multipart upload with key "<key>"
     Then initiate multipart upload status code is 200
