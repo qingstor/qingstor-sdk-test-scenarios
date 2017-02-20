@@ -33,13 +33,13 @@ Feature: the object feature
 
     # Options Object
     When options object "<key>" with method "GET" and origin "qingcloud.com"
-    Then options utf-8 object status code is 200
+    Then options object status code is 200
 
     # DELETE Object
     When delete object with key "<key>"
     Then delete object status code is 204
     When delete the move object with key "<key>"
-    Then delete the move object status code is 20
+    Then delete the move object status code is 204
 
     Examples: Object keys
       | key |
