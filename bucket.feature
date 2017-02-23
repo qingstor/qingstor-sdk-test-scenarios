@@ -56,3 +56,9 @@ Feature: the bucket feature
   Scenario: delete the bucket
     When delete bucket
     Then delete bucket status code is 204
+
+  # List Multipart Uploads
+  Scenario: list multipart uploads
+    Given an object created by Initiate Multipart Upload
+    When list multipart uploads
+    Then list multipart uploads count is 1
