@@ -34,7 +34,7 @@ Feature: the object multipart sub service
     Examples: Object keys
       | key |
       # ASCII
-      | test_object |
+      | test_object_multipart |
       # Non-ASCII
-      | 中文测试 |
-      | 田中さんにあげて下さい |
+      | 中文分块测试 |
+      | 田中さんにあげて下さいブロック |
