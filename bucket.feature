@@ -59,6 +59,6 @@ Feature: the bucket feature
 
   # List Multipart Uploads
   Scenario: list multipart uploads
-    Given an object created by Initiate Multipart Upload
+    Given an object created by initiate multipart upload
     When list multipart uploads
     Then list multipart uploads count is 1
