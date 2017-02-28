@@ -1,5 +1,5 @@
 @object_multipart
-Feature: the object multipart sub service
+Feature: the object multipart feature
 
   Scenario Outline:
     # Initiate Multipart Upload
