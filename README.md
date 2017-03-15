@@ -1,7 +1,6 @@
 # QingStor SDK Test Scenarios
 
 [![License](http://img.shields.io/badge/license-apache%20v2-blue.svg)](https://github.com/yunify/qingstor-sdk-test-scenarios/blob/master/LICENSE)
-</span>
 
 Test scenarios for QingStor SDKs.
 
