@@ -62,3 +62,5 @@ Feature: the bucket feature
     Given an object created by initiate multipart upload
     When list multipart uploads
     Then list multipart uploads count is 1
+    When list multipart uploads with prefix
+    Then list multipart uploads with prefix count is 1
