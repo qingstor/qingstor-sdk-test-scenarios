@@ -23,3 +23,8 @@ Feature: the bucket lifecycle feature
   Scenario: get lifecycle of the bucket
     When get bucket lifecycle
     Then get bucket lifecycle status code is 200
+    
+  # DELETE Bucket lifecycle
+  Scenario: delete lifecycle of the bucket
+    When delete bucket lifecycle
+    Then delete bucket lifecycle status code is 204
