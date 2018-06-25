@@ -8,9 +8,13 @@ Feature: the bucket notification feature
     {
       "notifications": [
         {
-          "id": "notification id",
+          "id": "notification-1",
           "event_types": "create_object",
-          "cloudfunc": "create_object"
+          "cloudfunc": "tupu-porn",
+          "object_filters": [
+                "*"
+            ],
+            "notify_url": "http://user_notify_url"
         }
       ]
     }
@@ -21,6 +25,7 @@ Feature: the bucket notification feature
   Scenario: get notification of the bucket
     When get bucket notification
     Then get bucket notification status code is 200
+    And get bucket notification should have cloudfunc "tupu-porn"
    
   # DELETE Bucket notification
   Scenario: delete notification of the bucket
