@@ -25,7 +25,7 @@ Feature: the object multipart feature
 
     # Abort Multipart Upload
     When abort multipart upload with key "<key>"
-    Then abort multipart upload status code is 400
+    Then abort multipart upload status code is 204
 
     # DELETE Object
     When delete the multipart object with key "<key>"
