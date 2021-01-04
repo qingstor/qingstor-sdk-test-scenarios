@@ -1,6 +1,6 @@
 # QingStor SDK Test Scenarios
 
-[![License](http://img.shields.io/badge/license-apache%20v2-blue.svg)](https://github.com/yunify/qingstor-sdk-test-scenarios/blob/master/LICENSE)
+[![License](http://img.shields.io/badge/license-apache%20v2-blue.svg)](https://github.com/qingstor/qingstor-sdk-test-scenarios/blob/master/LICENSE)
 
 Test scenarios for QingStor SDKs.
 
@@ -43,7 +43,7 @@ $ cucumber --backtrace --require="./" ./features
 
 ## Contributing
 
-1. Fork it ( https://github.com/yunify/qingstor-sdk-test-scenarios/fork )
+1. Fork it ( https://github.com/qingstor/qingstor-sdk-test-scenarios/fork )
 2. Create your feature branch (`git checkout -b new-feature`)
 3. Commit your changes (`git commit -asm 'Add some feature'`)
 4. Push to the branch (`git push origin new-feature`)
