@@ -5,15 +5,6 @@ Feature: the bucket feature
     When initialize the bucket
     Then the bucket is initialized
 
-  # PUT Bucket
-  Scenario: create the bucket
-    When put bucket
-    Then put bucket status code is 201
-
-  Scenario: create the same bucket again
-    When put same bucket again
-    Then put same bucket again status code is 409
-
   # GET Bucket (List Objects)
   Scenario: list objects in the bucket
     When list objects
@@ -51,11 +42,6 @@ Feature: the bucket feature
     When get bucket statistics
     Then get bucket statistics status code is 200
     And get bucket statistics status is "active"
-
-  # DELETE Bucket
-  Scenario: delete the bucket
-    When delete bucket
-    Then delete bucket status code is 204
 
   # List Multipart Uploads
   Scenario: list multipart uploads
