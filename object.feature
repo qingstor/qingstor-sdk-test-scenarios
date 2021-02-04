@@ -6,13 +6,13 @@ Feature: the object feature
     When put object with key "<key>"
     Then put object status code is 201
 
+    # PUT Object with metadata
+    When put object "<key>" with metadata "k1":"v1", "k2":"v2"
+    Then put object with metadata status code is 201
+
     # Copy Object
     When copy object with key "<key>"
     Then copy object status code is 201
-
-    # Modify Object with metadata
-    When modify object "<key>" with metadata "k1":"v1", "k2":"v2"
-    Then modify object status code is 201
 
     # Move Object
     When move object with key "<key>"
@@ -22,6 +22,10 @@ Feature: the object feature
     When get object with key "<key>"
     Then get object status code is 200
     And get object content length is 1048576
+
+    # GET Object and check metadata
+    When get object "<key>" and check metadata
+    Then get object status code is 200
     And get object metadata is "k1":"v1", "k2":"v2"
 
     # GET Object with Content-Type
