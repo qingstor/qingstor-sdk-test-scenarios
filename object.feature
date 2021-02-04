@@ -11,8 +11,8 @@ Feature: the object feature
     Then copy object status code is 201
 
     # Copy Object with metadata
-    When copy object with key "obj-with-metadata", metadata "k1":"v1", "k2":"v2"
-    Then get object metadata is "k1":"v1", "k2":"v2"
+    When copy object "<key>" with metadata "k1":"v1", "k2":"v2"
+    Then copy object status code is 201
 
     # Move Object
     When move object with key "<key>"
@@ -22,6 +22,7 @@ Feature: the object feature
     When get object with key "<key>"
     Then get object status code is 200
     And get object content length is 1048576
+    And get object metadata is "k1":"v1", "k2":"v2"
 
     # GET Object with Content-Type
     When get object "<key>" with content type "video/mp4; charset=utf8"
