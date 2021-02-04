@@ -10,6 +10,10 @@ Feature: the object feature
     When copy object with key "<key>"
     Then copy object status code is 201
 
+    # Copy Object with metadata
+    When copy object with key "obj-with-metadata", metadata "k1":"v1", "k2":"v2"
+    Then get object metadata is "k1":"v1", "k2":"v2"
+
     # Move Object
     When move object with key "<key>"
     Then move object status code is 201
