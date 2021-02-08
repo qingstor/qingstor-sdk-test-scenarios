@@ -47,8 +47,11 @@ Feature: the object feature
     # DELETE Object
     When delete object with key "<key>"
     Then delete object status code is 204
+    # moved from key with suffix '_copy', so do not need to delete copy object
     When delete the move object with key "<key>"
     Then delete the move object status code is 204
+    When delete object with metadata and "<key>"
+    Then delete object with metadata status code is 204
 
     Examples: Object keys
       | key |
