@@ -24,3 +24,8 @@ Feature: the bucket ACL feature
     When get bucket ACL
     Then get bucket ACL status code is 200
     And get bucket ACL should have grantee name "QS_ALL_USERS"
+
+  # DELETE Bucket ACL
+  Scenario: delete ACL of the bucket
+    When delete bucket ACL
+    Then delete bucket ACL status code is 200
