@@ -9,7 +9,9 @@ Feature: the bucket notification feature
       "notifications": [
         {
           "id": "notification-1",
-          "event_types": "create_object",
+          "event_types": [
+            "create_object"
+          ]
           "cloudfunc": "notifier",
           "object_filters": [
             "*"
