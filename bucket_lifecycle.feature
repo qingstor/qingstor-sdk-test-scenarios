@@ -11,10 +11,10 @@ Feature: the bucket lifecycle feature
           "id": "abort-multipart-upload-in-data",
           "status": "enabled",
           "filter": {
-            "prefix": "data/",
-            "abort_incomplete_multipart_upload": {
-              "days_after_initiation": 3
-            }
+            "prefix": "data/"
+          },
+          "abort_incomplete_multipart_upload": {
+            "days_after_initiation": 3
           }
         }
       ]
