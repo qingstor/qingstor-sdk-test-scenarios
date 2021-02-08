@@ -12,7 +12,7 @@ Feature: the bucket ACL feature
             "type": "group",
             "name": "QS_ALL_USERS"
           },
-          "permission": "FULL_CONTROL"
+          "permission": "READ"
         }
       ]
     }
@@ -24,3 +24,8 @@ Feature: the bucket ACL feature
     When get bucket ACL
     Then get bucket ACL status code is 200
     And get bucket ACL should have grantee name "QS_ALL_USERS"
+
+  # clear Bucket ACL
+  Scenario: put empty ACL of the bucket
+    When put empty bucket ACL
+    Then put empty bucket ACL status code is 200
