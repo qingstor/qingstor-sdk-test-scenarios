@@ -12,9 +12,9 @@ Feature: the bucket notification feature
           "event_types": "create_object",
           "cloudfunc": "notifier",
           "object_filters": [
-                "*"
-            ],
-            "notify_url": "http://user_notify_url"
+            "*"
+          ],
+          "notify_url": "http://user_notify_url"
         }
       ]
     }
