@@ -12,7 +12,7 @@ Feature: the bucket ACL feature
             "type": "group",
             "name": "QS_ALL_USERS"
           },
-          "permission": "FULL_CONTROL"
+          "permission": "READ"
         }
       ]
     }
