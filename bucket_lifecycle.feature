@@ -13,9 +13,9 @@ Feature: the bucket lifecycle feature
           "filter": {
             "prefix": "data/",
             "abort_incomplete_multipart_upload": {
-                "days_after_initiation": 3
+              "days_after_initiation": 3
             }
-          },     
+          }
         }
       ]
     }
