@@ -11,7 +11,7 @@ Feature: the bucket notification feature
           "id": "notification-1",
           "event_types": [
             "create_object"
-          ]
+          ],
           "cloudfunc": "notifier",
           "object_filters": [
             "*"
